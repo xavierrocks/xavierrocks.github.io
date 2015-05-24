@@ -1,10 +1,8 @@
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 body {
-  overflow-y: hidden;
   font-size: 16px;
   overflow-x: hidden;
   font-family: 'Merriweather';
