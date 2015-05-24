@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
   font-size: 16px;
   overflow-x: hidden;
@@ -71,7 +76,7 @@ header {
 #feature_image_box {
   width: 100%;
   height: 23.5em;
-  background-image: url("xavierrocks.github.io/Optmized.jpg");
+  background-image: url("https://raw.githubusercontent.com/xavierrocks/xavierrocks.github.io/master/Optimized.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
