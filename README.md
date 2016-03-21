@@ -1,27 +1,26 @@
-# xavierrocks.github.io
-Personal website profile of Xavier Ruiz
+# Parallax On The Web - Project Files
 
-Raw Info
-Title: Coco's Cookies
+Video Series [ for free on YouTube](https://www.youtube.com/playlist?list=PLqGj3iMvMa4IyCbhul-PdeiDqmh4ooJzk) on the [DevTips](https://www.youtube.com/user/DevTipsForDesigners) Channel
 
-Recipe Title: Chocolate Oatmeal Protein Cookies
+## Releases
 
-Description: "Wake up!" That's exactly what these cookies would say, if they could talk. These are the perfect energy boosters to use if you need it after a workout, to write a paper, or simply waking up. Packed with protein, these cookies definitely won't leave you hungry although you may crave for more. Relish this chocolatey snack that has a satisfying crunch. These are so simple to make and no baking is required! Savor this delicious, chocolatey, scrumptious cookie.
+Releases correspond to the videos. Visit the releases page on this repo to find the specific state of the code base. In other words; if you are watching video 2 and want to grab the code form that point. You will want to look for that [here](#).
 
-Estimated Cook Time: 5 Minutes
+## Video 1 - "Intro to Parallax on the Web"
 
-Ingredients Needed:
-- 1 cup of peanut butter
-- 2 scoops of protein powder
-- 1 cup of rolled oats
-- 1/4 cup of of honey
-- Other mix-ins
-  -Granola
+<a href="https://youtu.be/STwoa-9jxi0"><img src="https://i.ytimg.com/vi/STwoa-9jxi0/mqdefault.jpg"><br>Watch on YouTube</a>
 
-Steps:
-1) Combine the peanut butter, honey, and protein mix into a bowl.
-2) Fold in the oats. (it’s okay to use your hands!)
-3) Add the mix-ins, and more oats if a dryer cookie is desired.
-4) Roll into bite-size balls and flatten.
+- There is no code for this video, it's an introductory video
 
-Tips: I advise to you add a little more oats than you think, because as you mix them in, you will notice that they get well saturated and almost dissolve. Also, I think it would be interesting to try other mix-ins not mentioned here, like dried banana chip pieces or even peanuts. Be sure to experiment with the other protein powders too. 
+
+
+## Video 2 - "Parallax Header"
+
+<a href="https://youtu.be/WTZpNAbz3jg"><img src="https://i.ytimg.com/vi/WTZpNAbz3jg/mqdefault.jpg"><br>Watch on YouTube</a>
+
+- This is where the project starts. [Get the code](https://github.com/DevTips/Parallax-on-the-Web-DevTips-/releases/tag/v0.1).
+- This is where the project stops at the end of this video. [Get the code]().
+
+---
+
+_If this stuff is helpful, consider subscribing to my [YouTube Channel](https://www.youtube.com/user/DevTipsForDesigners)_
