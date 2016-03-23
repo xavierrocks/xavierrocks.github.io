@@ -7,6 +7,11 @@ h1 {
   weight: 300;
 }
 
+.subtitle {
+  color: #414040 !important;
+  weight: 300;
+}
+
 figure {
   margin: auto;
 }
