@@ -7,6 +7,9 @@ span.label {
   font-family: 'Raleway', sans-serif;
 }
 
+#link {
+  color: black;
+}
 #main-address a:visited {
   color: black;
 }
