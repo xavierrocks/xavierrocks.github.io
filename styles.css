@@ -10,6 +10,10 @@ span.label {
 #link {
   color: black;
 }
+#main-address a {
+  color: black;
+}
+
 #main-address a:visited {
   color: black;
 }
