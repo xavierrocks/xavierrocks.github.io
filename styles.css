@@ -12,6 +12,7 @@ span.label {
 }
 #main-address a {
   color: black;
+  text-decoration: underline;
 }
 
 #main-address a:visited {
