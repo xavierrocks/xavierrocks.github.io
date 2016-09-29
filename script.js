@@ -33,5 +33,5 @@ function playSound() {
 dance.addEventListener('click', function(event) { playSound(); });
 function goToGoogleMaps() {
 
-  window.location.assign("https://www.google.com/maps/place/40621+N+Copper+Basin+Trail,+Anthem,+AZ+85086/@33.853785,-112.1102487,17z/data=!3m1!4b1!4m5!3m4!1s0x872b62706d911b97:0xae318b550a9c242d!8m2!3d33.853785!4d-112.10806")
+  window.location.assign("https://d3jc3ahdjad7x7.cloudfront.net/U61cDXbIt6EV6BpJ76j7zsOjwa9dqO1P11V8zR6HT0atPhLM.pdf")
 }
