@@ -1,4 +1,4 @@
-# Welcome to my personal website!
+# Welcome to my personal website
 
 Click the link below to find out more:
 
@@ -8,8 +8,7 @@ Click the link below to find out more:
 
 ***
 
-
 TODO:
-- create gifs of all my pens
-- make a basic site layout
-- add descriptions and write-ups for all the pens
+-create gifs of all my pens
+-make a basic site layout
+-add descriptions and write-ups for all the pens
