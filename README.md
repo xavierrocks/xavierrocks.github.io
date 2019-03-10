@@ -4,8 +4,6 @@ Click the link below to find out more:
 
 ***
 
-***
-
 <p align="center"><a href="xavierrocks.github.io">xavierrocks.github.io</a></p>
 
 ***
