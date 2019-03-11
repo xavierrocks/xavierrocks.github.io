@@ -86,15 +86,15 @@ nav ul li a {
   position: relative;
   height: 45px;
   border-bottom: 3px solid black;
+  width: 200px;
 }
 
 .inside:after {
   content: "";
   display: inline-block;
   position: absolute;
-  right: -1.25em;
-  bottom: -.7em;
-  border-width: 1px;
+  right: -.85em;
+  bottom: -0.5em;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -156,8 +156,9 @@ footer.page-footer ul {
 
 
 .sidenav li>a {
-  height: 55px !important;
+  height: 75px !important;
   line-height: 55px !important;
+  font-size: 1.55em;
 }
 
 @media (max-width: 600px) {
