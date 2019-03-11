@@ -61,7 +61,7 @@ nav ul li a {
 
 #logo-2{
   top: 0;
-  left: -50px
+  left: -50px;
 }
 
 .sidenav li>a#logo-container:hover {
@@ -69,14 +69,19 @@ nav ul li a {
 }
 
 .logo {
-  height: 200px;
-  line-height: 200px;
+  height: 220px;
+  line-height: 220px;
 }
 
 .front-page-logo {
   width: 150px;
   position: relative;
   top: 25px;
+}
+
+.inside {
+  margin-left: 70px;
+  border-bottom: 3px solid black;
 }
 
 img {
