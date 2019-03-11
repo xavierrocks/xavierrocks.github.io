@@ -52,7 +52,7 @@ nav ul li a {
 
 #logo-container {
   text-align: center;
-  height: 200px !important;
+  height: 100% !important;
 }
 
 #logo1 {
@@ -61,48 +61,45 @@ nav ul li a {
 
 #logo2 {
   top: 0;
-  left: -37.5px;
+  left: -44px;
 }
 
 .sidenav li>a#logo-container:hover {
   background-color: transparent;
 }
 
-.sidenav li>a {
-  height: 75px !important;
-}
 
 .logo {
-  height: 220px;
-  line-height: 220px;
+  height: 250px;
+  line-height: 250px !important;
 }
 
 .front-page-logo {
-  width: 150px;
+  width: 175px;
   position: relative;
   top: 25px;
 }
 
 .inside {
-  margin-left: 13px;
-    padding-left: 20px;
-    position: relative;
-    height: 45px;
-    border-bottom: 3px solid black;
+  left: -5px;
+  padding-left: 20px;
+  position: relative;
+  height: 45px;
+  border-bottom: 3px solid black;
 }
 
 .inside:after {
   content: "";
-    display: inline-block;
-    position: absolute;
-    right: -1.25em;
-    bottom: -.7em;
-    border-width: 1px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 3px solid black;
-    z-index: 300;
+  display: inline-block;
+  position: absolute;
+  right: -1.25em;
+  bottom: -.7em;
+  border-width: 1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid black;
+  z-index: 300;
 }
 
 img {
