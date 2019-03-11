@@ -55,7 +55,7 @@ nav ul li a {
   height: 200px !important;
 }
 
-#logo-container:hover {
+.sidenav li>a#logo-container:hover {
   background-color: transparent;
 }
 
@@ -64,7 +64,7 @@ nav ul li a {
   line-height: 200px;
 }
 
-.font-page-logo {
+.front-page-logo {
   width: 150px;
   position: relative;
   top: 25px;
