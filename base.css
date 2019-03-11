@@ -84,8 +84,8 @@ nav ul li a {
   left: -5px;
   padding-left: 20px;
   position: relative;
-  height: 45px;
-  border-bottom: 3px solid black;
+  height: 50px;
+  border-bottom: 3px solid #CCCCCC;
   width: 200px;
 }
 
@@ -98,7 +98,7 @@ nav ul li a {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 3px solid black;
+  border: 3px solid #CCCCCC;
   z-index: 300;
 }
 
