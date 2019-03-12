@@ -24,7 +24,8 @@ header {
 }
 
 header > .container {
-  height: 75px;
+  height: 60px;
+  padding-top: 0;
 }
 
 .navigator {
@@ -122,6 +123,10 @@ p.name span {
   text-transform: uppercase;
   font-weight: lighter;
   font-size: .7em;
+}
+
+.contacts {
+  margin-top: 50px;
 }
 
 
