@@ -10,7 +10,6 @@ footer {
 }
 
 @media only screen and (max-width: 992px) {
-
   header,
   main,
   footer {
@@ -20,11 +19,17 @@ footer {
 
 header {
   width: 100%;
-  min-height: 75px;
+  min-height: 55px;
   background-color: #fafafa;
 }
 
+header > .container {
+  height: 75px;
+}
 
+.navigator {
+  padding-top: 15px;
+}
 
 nav {
   height: 75px;
@@ -101,6 +106,24 @@ nav ul li a {
   border: 3px solid #CCCCCC;
   z-index: 300;
 }
+
+p.name {
+  position: relative;
+  bottom: 540px;
+  z-index: 3;
+  color: white;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  line-height: 22px;
+  font-size: 1.15em !important;
+}
+
+p.name span {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: .7em;
+}
+
 
 img {
   padding: 10px;

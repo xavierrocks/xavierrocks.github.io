@@ -24,19 +24,8 @@ function renderItems(res) {
 
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {});
-    var dropdowns = document.querySelectorAll('.dropdown-trigger')
-    for (var i = 0; i < dropdowns.length; i++) {
-        M.Dropdown.init(dropdowns[i], {
-            alignment: "right",
-            // hover: true, MAYBE ADD IN FUTURE 
-            constrainWidth: false,
-            coverTrigger: false
-        });
-    }
-    var collapsibles = document.querySelectorAll('.collapsible')
-    for (var i = 0; i < collapsibles.length; i++) {
-        M.Collapsible.init(collapsibles[i]);
-    }
+    instances[0].close()
+    
 }
 
 function renderFooter(res) {
