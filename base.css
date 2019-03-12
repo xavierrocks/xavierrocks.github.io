@@ -81,7 +81,7 @@ nav ul li a {
 }
 
 .front-page-logo {
-  width: 175px;
+  width: 200px;
   position: relative;
   top: 25px;
 }
@@ -110,7 +110,7 @@ nav ul li a {
 
 p.name {
   position: relative;
-  bottom: 540px;
+  bottom: 600px;
   z-index: 3;
   color: white;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
