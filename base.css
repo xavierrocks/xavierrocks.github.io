@@ -78,6 +78,7 @@ nav ul li a {
 .logo {
   height: 250px;
   line-height: 250px !important;
+  margin-bottom: 20px;
 }
 
 .front-page-logo {
@@ -126,7 +127,7 @@ p.name span {
 }
 
 .contacts {
-  margin-top: 50px;
+  margin-top: 130px;
 }
 
 
