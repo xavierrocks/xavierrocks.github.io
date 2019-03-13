@@ -47,6 +47,16 @@ function renderItems(res) {
             if(e.target.classList[0] == "inside") {
                 link = link.parentElement;
             }
+            // if the link is part of the side menu
+            if(link.parentElement.parentElement.classList[0]=="sidenav"){
+                // remove active class from all items
+                var menuItems = document.querySelectorAll("a[data-page]");
+                for (var j=0; j<menuItems.length; j++) {
+                    menuItems[j].classList.remove("active");
+                }
+                // apply active class to current link
+                link.classList.add("active");
+            }
             link = link.getAttribute("data-page");
             if(link!=null) {
                 changePage(link);
