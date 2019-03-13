@@ -67,7 +67,7 @@ nav ul li a {
 
 #logo2 {
   top: 0;
-  left: -44px;
+  left: -50px;
 }
 
 .sidenav li>a#logo-container:hover {
@@ -111,7 +111,7 @@ nav ul li a {
 
 p.name {
   position: relative;
-  bottom: 600px;
+  bottom: 550px;
   z-index: 3;
   color: white;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -127,7 +127,7 @@ p.name span {
 }
 
 .contacts {
-  margin-top: 130px;
+  margin-top: 60px;
 }
 
 
@@ -209,7 +209,7 @@ footer .container .row {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 /* Track */
