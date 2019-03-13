@@ -2,10 +2,10 @@
     <div class="container">
         <div class="row center">
             <div class="col s12">
-                <h1>The Dichopter Project</h1>
+                <h1>About Me</h1>
             </div>
 
-            <div class="col s12"><img src="https://dichopter.github.io/binocularLogo.svg" alt="A pair of eyeglasses"></div>
+            <div class="col s12"><img src="https://dichopter.github.io/me.jpg" alt="A goofy picture of me"></div>
 
             <div class="col s12">
                 <h2>Explorations in Dichoptic Vision</h2>
