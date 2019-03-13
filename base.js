@@ -79,7 +79,7 @@ function changeJS(jsFile, jsLinkIndex) {
 
 function changePage(base) {
     // Now, the content of the main must change
-    var newMain = httpGetSync("https://xavierrocks.github.io/" + base + ".html");
+    var newMain = httpGetSync("https://xavierrocks.github.io/" + base + "/index.txt");
     // replace the content of main 
     document.getElementsByTagName("main")[0].innerHTML = newMain;
 
