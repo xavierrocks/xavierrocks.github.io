@@ -19,11 +19,3 @@
     max-width: 70%;
   }
 
-
-  * {
-      background: green;
-  }
-
-  body {
-      background: red !important;
-  }
