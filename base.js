@@ -19,6 +19,9 @@ function httpGetAsync(theUrl, callback) {
     xmlHttp.send(null);
 }
 
+
+
+
 function httpGetSync(theUrl) {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", theUrl, false); // false for synchronous request
@@ -77,15 +80,22 @@ function changeJS(jsFile, jsLinkIndex) {
     document.getElementsByTagName("body").item(0).replaceChild(newsrc, oldsrc);
 }
 
-function changePage(base) {
-    // Now, the content of the main must change
-    var newMain = httpGetSync("https://xavierrocks.github.io/" + base + "/main.html");
-    // replace the content of main 
-    document.getElementsByTagName("main")[0].innerHTML = newMain;
 
-    // now that the main content is changed, we can change the other assets
-    // So far, the custom css styling for pages will always be the eighth index
-    changeCSS("https://xavierrocks.github.io/" + base + "/css/styles.css", 8);
-    // the custom JS will also always be the second index
-    changeJS("https://xavierrocks.github.io/" + base + "/js/index.js", 2);
+function changePage(base) {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", "https://xavierrocks.github.io/" + base + "/main.html", true); // true for asynchronous 
+    xmlHttp.responseType = "document"; 
+    xmlHttp.send(null);
+    xmlHttp.onreadystatechange = function () {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            var newMain = xmlHttp.response;
+            document.getElementsByTagName("main")[0].innerHTML = newMain;
+
+            // now that the main content is changed, we can change the other assets
+            // So far, the custom css styling for pages will always be the eighth index
+            changeCSS("https://xavierrocks.github.io/" + base + "/css/styles.css", 8);
+            // the custom JS will also always be the second index
+            changeJS("https://xavierrocks.github.io/" + base + "/js/index.js", 2);
+        }
+    }
 }
