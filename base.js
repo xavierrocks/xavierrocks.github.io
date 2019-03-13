@@ -84,11 +84,10 @@ function changeJS(jsFile, jsLinkIndex) {
 function changePage(base) {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", "https://xavierrocks.github.io/" + base + "/main.html", true); // true for asynchronous 
-    xmlHttp.responseType = "document"; 
     xmlHttp.send(null);
     xmlHttp.onreadystatechange = function () {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-            var newMain = xmlHttp.response;
+            var newMain = xmlHttp.responseText;
             document.getElementsByTagName("main")[0].innerHTML = newMain;
 
             // now that the main content is changed, we can change the other assets
