@@ -176,6 +176,9 @@ nav a.sidenav-trigger {
   background-color: #e8e8e8;
 }
 
+footer {
+  padding-bottom: 20px;
+}
 
 footer h5 {
   font-weight: bold;
