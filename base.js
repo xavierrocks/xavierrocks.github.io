@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Render the footer through here
     httpGetAsync("https://xavierrocks.github.io/footer.html", renderFooter);
 
+    var links = document.querySelectorAll("a[data-page]");
+    console.log(links);
+
 });
 
 
@@ -30,4 +33,24 @@ function renderItems(res) {
 
 function renderFooter(res) {
     document.querySelector("footer").innerHTML = res;
+}
+
+
+function changeCSS(cssFile, cssLinkIndex) {
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+    document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+}
+
+
+function changeJS(jsFile, jsLinkIndex) {
+    var oldsrc = document.getElementsByTagName("script").item(jsLinkIndex);
+    var newsrc = document.createElement("script");
+    newsrc.setAttribute("src", jsFile);
+
+    document.getElementsByTagName("body").item(0).replaceChild(newsrc, oldsrc);
 }
