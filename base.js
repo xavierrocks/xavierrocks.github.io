@@ -90,7 +90,7 @@ function changePage(base) {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
             var newMain = xmlHttp.responseText;
             var parser = new DOMParser();
-            var doc = parser.parseFromString(newMain, "text/html");
+            var doc = parser.parseFromString(newMain, "text/html").body;
             var main = document.getElementsByTagName("main")[0];
             for(var i = 0; i<doc.childNodes.length; i++) {
                 main.appendChild(doc.childNodes[i]);
