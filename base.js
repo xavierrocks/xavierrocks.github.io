@@ -97,7 +97,7 @@ function changePage(base) {
                 main.appendChild(doc.childNodes[i]);
             }
             // check if nav menu is popped out for mobile, close it
-            if(window.innerWidth <= 992px) {
+            if(window.innerWidth <= 992) {
                 M.Sidenav.getInstance(document.querySelector(".sidenav")).close();
             }
 
