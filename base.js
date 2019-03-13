@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     httpGetAsync("https://xavierrocks.github.io/navbar.html", renderItems);
     // Render the footer through here
     httpGetAsync("https://xavierrocks.github.io/footer.html", renderFooter);
-    
+
 
 });
 
@@ -37,7 +37,12 @@ function renderItems(res) {
     // the header is now ready to be manipulated and have event listeners
     // adds event listeners for a "page change" and performs one accordingly
     var links = document.querySelectorAll("a[data-page]");
-    console.log(links);
+    for(var i=0; i<links.length; i++) {
+        links[i].addEventListener('click', function(e){
+            e.preventDefault();
+            console.log(e);
+        });
+    }
 
 }
 
