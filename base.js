@@ -96,6 +96,10 @@ function changePage(base) {
             for(var i = 0; i<doc.childNodes.length; i++) {
                 main.appendChild(doc.childNodes[i]);
             }
+            // check if nav menu is popped out for mobile, close it
+            if(window.innerWidth <= 992px) {
+                M.Sidenav.getInstance(document.querySelector(".sidenav")).close();
+            }
 
             // now that the main content is changed, we can change the other assets
             // So far, the custom css styling for pages will always be the eighth index
