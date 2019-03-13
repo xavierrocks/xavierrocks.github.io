@@ -117,7 +117,7 @@ p.name {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: bolder;
   line-height: 22px;
-  font-size: 1.15em !important;
+  font-size: 1.35em !important;
 }
 
 p.name span {
@@ -187,7 +187,7 @@ footer.page-footer ul {
 .sidenav li>a {
   height: 75px !important;
   line-height: 55px !important;
-  font-size: 1.55em;
+  font-size: 1.25em;
 }
 
 @media (max-width: 600px) {

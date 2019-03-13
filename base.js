@@ -40,7 +40,14 @@ function renderItems(res) {
     for(var i=0; i<links.length; i++) {
         links[i].addEventListener('click', function(e){
             e.preventDefault();
-            console.log(e);
+            var link = e.target;
+            if(e.target.classList[0] == "inside") {
+                link = link.parentElement;
+            }
+            link = link.getAttribute("data-page");
+            if(link!=null) {
+                changePage(link);
+            } 
         });
     }
 
