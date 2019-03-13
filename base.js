@@ -84,12 +84,14 @@ function changeJS(jsFile, jsLinkIndex) {
 function changePage(base) {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", "https://xavierrocks.github.io/" + base + "/main.html", true); // true for asynchronous 
-    xmlHttp.responseType = "document"; 
+    
     xmlHttp.send(null);
     xmlHttp.onreadystatechange = function () {
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-            var newMain = xmlHttp.response.children[0].innerHTML;
-            document.getElementsByTagName("main")[0].innerHTML = newMain;
+            var newMain = xmlHttp.responseText;
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(newMain, "text/html");
+            document.getElementsByTagName("main")[0].innerHTML = doc;
 
             // now that the main content is changed, we can change the other assets
             // So far, the custom css styling for pages will always be the eighth index
