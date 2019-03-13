@@ -3,9 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     httpGetAsync("https://xavierrocks.github.io/navbar.html", renderItems);
     // Render the footer through here
     httpGetAsync("https://xavierrocks.github.io/footer.html", renderFooter);
-
-    var links = document.querySelectorAll("a[data-page]");
-    console.log(links);
+    
 
 });
 
@@ -21,14 +19,26 @@ function httpGetAsync(theUrl, callback) {
     xmlHttp.send(null);
 }
 
+function httpGetSync(theUrl) {
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", theUrl, false); // false for synchronous request
+    xmlHttp.send(null);
+    return xmlHttp.responseText;
+}
+
+
 function renderItems(res) {
     // Insert the requested navbar html into the navbar element
     document.querySelector("header").innerHTML = res;
 
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {});
-    instances[0].close()
-    
+
+    // the header is now ready to be manipulated and have event listeners
+    // adds event listeners for a "page change" and performs one accordingly
+    var links = document.querySelectorAll("a[data-page]");
+    console.log(links);
+
 }
 
 function renderFooter(res) {
@@ -53,4 +63,17 @@ function changeJS(jsFile, jsLinkIndex) {
     newsrc.setAttribute("src", jsFile);
 
     document.getElementsByTagName("body").item(0).replaceChild(newsrc, oldsrc);
+}
+
+function changePage(base) {
+    // Now, the content of the main must change
+    var newMain = httpGetSync("https://xavierrocks.github.io/" + base + ".html");
+    // replace the content of main 
+    document.getElementsByTagName("main")[0].innerHTML = newMain;
+
+    // now that the main content is changed, we can change the other assets
+    // So far, the custom css styling for pages will always be the eighth index
+    changeCSS("https://xavierrocks.github.io/" + base + "/css/styles.css", 8);
+    // the custom JS will also always be the second index
+    changeJS("https://xavierrocks.github.io/" + base + "/js/index.js", 2);
 }
