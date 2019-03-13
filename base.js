@@ -92,6 +92,7 @@ function changePage(base) {
             var parser = new DOMParser();
             var doc = parser.parseFromString(newMain, "text/html").body;
             var main = document.getElementsByTagName("main")[0];
+            main.innerHTML = "";
             for(var i = 0; i<doc.childNodes.length; i++) {
                 main.appendChild(doc.childNodes[i]);
             }
