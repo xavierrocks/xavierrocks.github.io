@@ -91,7 +91,10 @@ function changePage(base) {
             var newMain = xmlHttp.responseText;
             var parser = new DOMParser();
             var doc = parser.parseFromString(newMain, "text/html");
-            document.getElementsByTagName("main")[0].innerHTML = doc;
+            var main = document.getElementsByTagName("main")[0];
+            for(var i = 0; i<doc.childNodes.length; i++) {
+                main.appendChild(doc.childNodes[i]);
+            }
 
             // now that the main content is changed, we can change the other assets
             // So far, the custom css styling for pages will always be the eighth index
