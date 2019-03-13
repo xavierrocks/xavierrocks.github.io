@@ -96,6 +96,14 @@ nav ul li a {
   width: 200px;
 }
 
+a.active {
+  background: rgba(0,0,0,.0375);
+}
+
+a.active > .inside:after {
+  background: #CCCCCC;
+}
+
 .inside:after {
   content: "";
   display: inline-block;
