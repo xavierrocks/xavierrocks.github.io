@@ -115,52 +115,38 @@ ul.large-menu>li>a:hover {
   background-color: transparent;
 }
 
-a.active {
+/* a.active {
   background: rgba(0, 0, 0, .0375);
+} */
+ul.nav-mobile a {
+  padding-left: 60px;
 }
 
-a:before {
+ul.nav-mobile a:before {
   content: "";
   display: inherit;
   position: relative;
-  right: -1.1em;
-  bottom: -0.6em;
+  right: 1.2em;
+  bottom: -2.6em;
   width: 200px;
   height: 20px;
-  
-  border-bottom: 3px solid green;
+  border-bottom: 3px solid #CCCCCC;
   z-index: 300;
 }
 
-a:after {
+ul.nav-mobile a:after {
   content: "";
   display: inline-block;
-  position: absolute;
-  right: -1.1em;
-  bottom: -2.6em;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 3px solid purple;
-  z-index: 300;
-}
-
-a.active>.inside:after {
-  background: #CCCCCC;
-}
-
-.inside:after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  right: -1.1em;
-  bottom: -0.6em;
+  position: relative;
+  right: -6.2em;
+  bottom: -1.1em;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   border: 3px solid #CCCCCC;
   z-index: 300;
 }
+
 
 p.name {
   position: relative;
@@ -348,14 +334,16 @@ footer .container .row {
   padding-left: 15px;
   border-left: none;
 }
+
 .table-of-contents a:hover {
   color: #424242;
   border-left: none;
 }
+
 .table-of-contents a {
   display: inline-block;
   font-weight: normal;
-  
+
   padding-left: 15px;
   /* height: 1.5rem; */
   line-height: inherit;
