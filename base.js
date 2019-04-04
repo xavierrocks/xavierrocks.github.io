@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.scrollspy');
-    var instances = M.ScrollSpy.init(elems, {});
+    var instances = M.ScrollSpy.init(elems, {scrollOffset: 50});
     var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, {'scrollOffset': 0});
-
+    var instances = M.Sidenav.init(elems, {});
+    
 });
 
 // document.addEventListener('DOMContentLoaded', function () {
