@@ -115,9 +115,13 @@ ul.large-menu>li>a:hover {
   background-color: transparent;
 }
 
-/* a.active {
-  background: rgba(0, 0, 0, .0375);
-} */
+ul#nav-mobile a.sideItem>i, ul#nav-mobile a.sideItem>i.material-icons {
+  float: inherit;
+  color: #424242;
+  position: relative;
+  top: 5px;
+}
+
 ul#nav-mobile a.sideItem {
   padding-left: 60px;
 }
@@ -271,6 +275,10 @@ nav a.sidenav-trigger {
   position: relative;
   background-position: center center;
   background-color: #e8e8e8;
+}
+
+.section {
+  min-height: 80vh;
 }
 
 footer {
