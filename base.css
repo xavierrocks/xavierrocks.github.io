@@ -98,10 +98,14 @@ ul.large-menu {
 }
 
 ul.large-menu>li>a {
-  
   height: 55px;
   bottom: 6px;
+}
 
+ul.large-menu>li>i {
+  display: initial;
+  position: relative;
+  top: 5px;
 }
 
 
@@ -200,14 +204,14 @@ p.name-large span {
 .contacts-large li a {
   padding-left: 0;
   padding-right: 0;
-  width: 45px;
-  height: 45px;
-  margin-left: 10px;
-  
+  width: 40px;
+  height: 40px;
+  margin-left: 25px;
 }
 
 .contacts-large li a:hover {
   background-color: transparent;
+  text-decoration: none;
 }
 .contacts-large li a img {
   padding: 0;
