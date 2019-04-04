@@ -185,7 +185,22 @@ p.name-large span {
 }
 
 .contacts-large {
+  height: 50px;
+}
+
+.contacts-large li {
+  display: inline;
+  width: 100px;
+  height: 100px;
+}
+.contacts-large li a {
+  padding-left: 0;
+  padding-right: 0;
   
+}
+
+.contacts-large li a img {
+  padding: 0
 }
 
 
