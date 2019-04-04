@@ -118,28 +118,28 @@ ul.large-menu>li>a:hover {
 /* a.active {
   background: rgba(0, 0, 0, .0375);
 } */
-ul#nav-mobile a {
+ul#nav-mobile a.sideItem {
   padding-left: 60px;
 }
 
-ul#nav-mobile a:before {
+ul#nav-mobile a.sideItem:before {
   content: "";
   display: inherit;
-  position: relative;
-  right: 1.2em;
-  bottom: -2.6em;
+  position: absolute;
+  right: 3.6em;
+  bottom: 1.4em;
   width: 200px;
   height: 20px;
   border-bottom: 3px solid #CCCCCC;
   z-index: 300;
 }
 
-ul#nav-mobile a:after {
+ul#nav-mobile a.sideItem:after {
   content: "";
   display: inline-block;
-  position: relative;
-  right: -6.2em;
-  bottom: -1.1em;
+  position: absolute;
+  right: 2.6em;
+  bottom: 0.9em;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -147,7 +147,7 @@ ul#nav-mobile a:after {
   z-index: 300;
 }
 
-ul#nav-mobile a.active:after {
+ul#nav-mobile a.sideItem.active:after {
   background: #CCCCCC;
 }
 
