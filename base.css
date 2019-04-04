@@ -121,14 +121,27 @@ a.active {
 
 a:before {
   content: "";
-  display: inline-block;
-  position: absolute;
+  display: inherit;
+  position: relative;
   right: -1.1em;
   bottom: -0.6em;
   width: 200px;
   height: 20px;
   
   border-bottom: 3px solid green;
+  z-index: 300;
+}
+
+a:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -1.1em;
+  bottom: -2.6em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid purple;
   z-index: 300;
 }
 
