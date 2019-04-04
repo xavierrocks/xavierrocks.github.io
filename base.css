@@ -19,6 +19,8 @@ header > .container {
 nav {
   height: 75px;
   color: black !important;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 nav ul li a {
@@ -96,10 +98,16 @@ ul.large-menu {
 }
 
 ul.large-menu>li>a {
-  text-decoration: underline;
-  height: 55px;
-  bottom: 5px;
   
+  height: 55px;
+  bottom: 6px;
+
+}
+
+
+ul.large-menu>li>a:hover {
+  text-decoration: underline;
+  background-color: transparent;
 }
 
 a.active {
