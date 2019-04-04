@@ -102,10 +102,11 @@ ul.large-menu>li>a {
   bottom: 6px;
 }
 
-ul.large-menu>li>i {
+ul.large-menu li i.material-icons {
   display: initial;
   position: relative;
   top: 5px;
+  font-size: 16px;
 }
 
 
@@ -279,6 +280,17 @@ footer.page-footer ul {
   line-height: 55px !important;
   font-size: 1.25em;
 }
+
+
+
+
+section h2 {
+  font-weight: bold;
+  font-size: 2.56rem;
+  
+}
+
+
 
 @media (max-width: 600px) {
   .row .col.s12.m4 {
