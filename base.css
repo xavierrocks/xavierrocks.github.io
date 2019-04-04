@@ -119,6 +119,19 @@ a.active {
   background: rgba(0, 0, 0, .0375);
 }
 
+a:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -1.1em;
+  bottom: -0.6em;
+  width: 200px;
+  height: 20px;
+  
+  border-bottom: 3px solid green;
+  z-index: 300;
+}
+
 a.active>.inside:after {
   background: #CCCCCC;
 }
