@@ -105,7 +105,7 @@ ul.large-menu>li>a {
 ul.large-menu li i.material-icons {
   display: initial;
   position: relative;
-  top: 5px;
+  top: 3px;
   font-size: 16px;
 }
 
@@ -284,10 +284,15 @@ footer.page-footer ul {
 
 
 
-section h2 {
+.section h2 {
   font-weight: bold;
   font-size: 2.56rem;
-  
+
+}
+
+.section h3 {
+  font-weight: lighter;
+
 }
 
 
