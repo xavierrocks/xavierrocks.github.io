@@ -1,7 +1,11 @@
 var input;
 var img;
+var f;
+var s;
+
 
 function setup() {
+  createCanvas(300,300);
   input = createFileInput(handleFile);
   input.position(0, 0);
 }
@@ -14,8 +18,16 @@ function draw() {
 
 function handleFile(file) {
   print(file);
-  if (file.type === 'image') {
-    img = createImg(file.data);
-    img.hide();
+  f = file;
+  if (file.subtype === 'javascript') {
+    // adding the new js
+
+    var imported = document.createElement("script");
+    imported.innerHTML = file.data;  //saved in "other js" folder
+    document.getElementsByTagName("head")[0].appendChild(imported);
+    setup();
+    draw();
+    // console.log(imported);
+    // console.log(file.data);
   }
 }
