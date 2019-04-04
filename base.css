@@ -118,11 +118,11 @@ ul.large-menu>li>a:hover {
 /* a.active {
   background: rgba(0, 0, 0, .0375);
 } */
-ul.nav-mobile a {
+ul#nav-mobile a {
   padding-left: 60px;
 }
 
-ul.nav-mobile a:before {
+ul#nav-mobile a:before {
   content: "";
   display: inherit;
   position: relative;
@@ -134,7 +134,7 @@ ul.nav-mobile a:before {
   z-index: 300;
 }
 
-ul.nav-mobile a:after {
+ul#nav-mobile a:after {
   content: "";
   display: inline-block;
   position: relative;
@@ -147,6 +147,9 @@ ul.nav-mobile a:after {
   z-index: 300;
 }
 
+ul#nav-mobile a.active:after {
+  background: #CCCCCC;
+}
 
 p.name {
   position: relative;
