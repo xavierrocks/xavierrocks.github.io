@@ -142,11 +142,19 @@ p.name-large span {
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 992px) {
   nav {
     height: 275px;
   }
 }
+
+.nav-and-contact {
+  height: 275px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
 
 .contacts {
   margin-top: 60px;
