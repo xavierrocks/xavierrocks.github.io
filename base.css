@@ -10,7 +10,7 @@ header {
   background-color: #fafafa;
 }
 
-header > .container {
+header>.container {
   height: 60px;
   padding-top: 0;
 }
@@ -19,8 +19,8 @@ header > .container {
 nav {
   height: 75px;
   color: black !important;
-  /* box-shadow: none;
-  -webkit-box-shadow: none; */
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 0 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 0px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 nav ul li a {
@@ -49,7 +49,7 @@ nav ul li a {
 
 #logo-container-large {
   text-align: center;
-  
+
 }
 
 #logo1 {
@@ -116,10 +116,10 @@ ul.large-menu>li>a:hover {
 }
 
 a.active {
-  background: rgba(0,0,0,.0375);
+  background: rgba(0, 0, 0, .0375);
 }
 
-a.active > .inside:after {
+a.active>.inside:after {
   background: #CCCCCC;
 }
 
@@ -200,8 +200,9 @@ p.name-large span {
 
 .contacts-large li {
   display: contents;
-  
+
 }
+
 .contacts-large li a {
   padding-left: 0;
   padding-right: 0;
@@ -214,6 +215,7 @@ p.name-large span {
   background-color: transparent;
   text-decoration: none;
 }
+
 .contacts-large li a img {
   padding: 0;
 }
@@ -321,16 +323,16 @@ footer .container .row {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent; 
+  background: transparent;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ccc; 
+  background: #ccc;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #888; 
+  background: #888;
 }
