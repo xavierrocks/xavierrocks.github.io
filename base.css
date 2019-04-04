@@ -112,6 +112,17 @@ p.name {
   font-size: 1.35em !important;
 }
 
+p.name-large {
+  position: relative;
+  bottom: 550px;
+  z-index: 3;
+  color: white;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  line-height: 22px;
+  font-size: 1.35em !important;
+}
+
 p.name span {
   text-transform: uppercase;
   font-weight: lighter;
