@@ -91,6 +91,15 @@ nav ul li a {
 
 ul.large-menu {
   float: right;
+  border-bottom: 1px solid black;
+  height: 55px;
+}
+
+ul.large-menu>li>a {
+  text-decoration: underline;
+  height: 55px;
+  bottom: 5px;
+  
 }
 
 a.active {
@@ -127,7 +136,7 @@ p.name {
 
 p.name-large {
   position: relative;
-  bottom: 145px;
+  bottom: 165px;
   z-index: 3;
   color: white;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -158,8 +167,8 @@ p.name-large span {
 .nav-and-contact {
   height: 275px;
   width: 100%;
-  position: absolute;
-  top: 0;
+  margin: 0;
+  padding-top: 25px;
 }
 
 
