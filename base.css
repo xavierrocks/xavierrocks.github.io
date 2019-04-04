@@ -184,6 +184,10 @@ p.name-large span {
   margin-top: 60px;
 }
 
+.contacts-container {
+  margin-top: 85px;
+}
+
 .contacts-large {
   height: 50px;
   float: right;
@@ -199,6 +203,11 @@ p.name-large span {
   width: 45px;
   height: 45px;
   margin-left: 10px;
+  
+}
+
+.contacts-large li a:hover {
+  background-color: transparent;
 }
 .contacts-large li a img {
   padding: 0;
