@@ -93,7 +93,7 @@ nav ul li a {
 
 ul.large-menu {
   float: right;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #424242;
   height: 55px;
 }
 
@@ -193,6 +193,8 @@ p.name-large span {
 @media only screen and (min-width: 992px) {
   nav {
     height: 275px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 }
 
