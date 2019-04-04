@@ -45,6 +45,12 @@ nav ul li a {
   height: 100% !important;
 }
 
+#logo-container-large {
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
 #logo1 {
   z-index: 2;
 }
@@ -114,16 +120,22 @@ p.name {
 
 p.name-large {
   position: relative;
-  bottom: 550px;
+  bottom: 145px;
   z-index: 3;
   color: white;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: bolder;
   line-height: 22px;
-  font-size: 1.35em !important;
+  font-size: 0.85em !important;
 }
 
 p.name span {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: .7em;
+}
+
+p.name-large span {
   text-transform: uppercase;
   font-weight: lighter;
   font-size: .7em;
