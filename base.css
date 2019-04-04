@@ -314,6 +314,33 @@ footer .container .row {
 
 
 
+
+
+
+.table-of-contents a.active {
+  font-weight: normal;
+  padding-left: 15px;
+  border-left: none;
+}
+.table-of-contents a:hover {
+  color: #424242;
+  border-left: none;
+}
+.table-of-contents a {
+  display: inline-block;
+  font-weight: normal;
+  
+  padding-left: 15px;
+  /* height: 1.5rem; */
+  line-height: inherit;
+  letter-spacing: .4;
+  /* display: inline-block; */
+}
+
+
+
+
+
 /* Custom scrollbar */
 
 /* width */
