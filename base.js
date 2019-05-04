@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.scrollspy');
     var instances = M.ScrollSpy.init(elems, {scrollOffset: 25});
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, {});
+    elems = document.querySelectorAll('.sidenav');
+    instances = M.Sidenav.init(elems, {});
     var links = document.querySelectorAll("a.sideItem");
     for(var i=0; i<links.length; i++) {
         links[i].addEventListener('click', function(e){
             M.Sidenav.getInstance(document.querySelector(".sidenav")).close();
-            
         });
     }
+    elems = document.querySelectorAll('.collapsible');
+    instances = M.Collapsible.init(elems, options);
 });
 
 // document.addEventListener('DOMContentLoaded', function () {
