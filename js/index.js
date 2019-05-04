@@ -7,15 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function renderJSON(res) {
     projects = JSON.parse(res);
-    renderLongTermProjects('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator"src="https://dichopter.github.io/binocularLogo.svg"></div><div class="card-content"><span class="activator card-title grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span></div><div class="card-action"><a class="blue-text"href="#">Go to project</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span><p>The Dichopter® Project aims to provide the user with hardware and software tools to help them explore dichoptic vision – that is, two eyed or binocular vision where two images are presented to the left and right eye separately. The Dichopter Project allows people to expolore 3D vision and perception of other physics simulations. I enjoyed this project because it required me to learn how to optimize web pages when dealing with lots of content.</div></div>');
+    renderLongTermProjects('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator"src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">Go to project</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p></div></div>');
     // httpGetAsync("https://xavierrocks.github.io/navbar.html", renderArtAndDoodles);
     // httpGetAsync("https://xavierrocks.github.io/navbar.html", renderAcademicProjects);
 }
 
 function renderLongTermProjects(element) {
-    // we know have a project element, let's insert them into the doc
-    console.log("long term projects");
     var longTermProjectsList = document.querySelector(".long-term-projects");
+    
     for(var i=0; i<projects.longTermProjects.length; i++){
         var current = projects.longTermProjects[i];
         var projectElement = document.createElement("li");
@@ -24,9 +23,10 @@ function renderLongTermProjects(element) {
         // Now, we want to edit the html of the element
         projectElement.children[0].children[0].children[0].src = current.imageURL;
         projectElement.children[0].children[1].children[0].innerHTML = current.name+"<i class='material-icons right'>more_vert</i>";
-        projectElement.children[0].children[2].children[0].url = current.url;
-
-
+        projectElement.children[0].children[2].children[0].href = current.url;
+        projectElement.children[0].children[3].children[0].innerHTML = current.name+"<i class='material-icons right'>close</i>"
+        projectElement.children[0].children[3].children[1].innerHTML = current.desc;
+        // And now it is ready to insert
         longTermProjectsList.appendChild(projectElement);
     }
 }
