@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function renderJSON(res) {
     projects = JSON.parse(res);
-    httpGetAsync("https://xavierrocks.github.io/navbar.html", renderLongTermProjects);
+    httpGetAsync("https://xavierrocks.github.io/longTermProjectElement.html", renderLongTermProjects);
     httpGetAsync("https://xavierrocks.github.io/navbar.html", renderArtAndDoodles);
     httpGetAsync("https://xavierrocks.github.io/navbar.html", renderAcademicProjects);
 }
@@ -17,9 +17,15 @@ function renderLongTermProjects(res) {
     console.log("long term projects");
     var longTermProjectsList = document.querySelector(".long-term-projects");
     for(var i=0; i<projects.longTermProjects.length; i++){
+        var current = projects.longTermProjects[i];
         var projectElement = document.createElement("li");
         projectElement.classList.add("col", "s12", "m4");
         projectElement.innerHTML = res;
+        // Now, we want to edit the html of the element
+        projectElement.children[0].children[0].children[0].src = current.imageURL;
+        projectElement.children[0].children[1].children[0].innerHTML = current.name+"<i class='material-icons right'>more_vert</i>";
+        console.log(projectElement.children[0].children[2].children[0]);
+
         longTermProjectsList.appendChild(projectElement);
     }
 }
