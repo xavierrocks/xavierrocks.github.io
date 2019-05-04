@@ -18,3 +18,14 @@
 .jumbotron img {
   max-width: 70%;
 }
+
+.technologies-used li {
+ display: inline;
+ background: green;
+ border-radius: 3px;
+
+}
+
+.card-reveal h4 {
+  font-size: 1.28em;
+}

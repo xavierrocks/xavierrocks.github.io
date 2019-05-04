@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function renderJSON(res) {
     projects = JSON.parse(res);
-    renderLongTermProjects('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator" src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">Go to project</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p></div></div>');
-    renderArtAndDoodles('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator" src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">View doodle</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p></div></div>');
+    renderLongTermProjects('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator" src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">Go to project</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p><h4>Technologies Used:</h4><ul class="technologies-used"><li>HTML</li><li>HTML</li></ul><h4>Role: </h4><p>Lead Developer</p></div></div>');
+    renderArtAndDoodles('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator" src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">View doodle</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p><h4>Technologies Used:</h4><ul class="technologies-used"><li>HTML</li><li>HTML</li></ul></div></div>');
     // httpGetAsync("https://xavierrocks.github.io/navbar.html", renderAcademicProjects);
 }
 
