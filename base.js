@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
     elems = document.querySelectorAll('.collapsible');
-    instances = M.Collapsible.init(elems, options);
+    instances = M.Collapsible.init(elems, {});
 });
 
 // document.addEventListener('DOMContentLoaded', function () {
