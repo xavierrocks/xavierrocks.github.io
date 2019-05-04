@@ -288,6 +288,10 @@ nav a.sidenav-trigger {
   max-height:250px;
 }
 
+.card .card-image img {
+  padding-bottom: 50%;
+}
+
 .section {
   min-height: 60vh;
 }
