@@ -29,7 +29,7 @@
         "date": "May 2019",
         "desc": "I remade Pong! This is two player, player one moves with WASD and player two moves with the arrow keys.",
         "technologiesUsed" : ["JavaScript", "p5.js"],
-        "url": "binary-numbers",
+        "url": "pong",
         "imageURL": "capture.gif"
     }],
     "academicProjects" : [{
