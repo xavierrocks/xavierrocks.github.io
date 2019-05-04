@@ -1,14 +1,24 @@
 {
     "long-term-projects": [{
-        "name": "",
-        "date": "",
-        "desc": "",
+        "name": "Dichopter® Project",
+        "date": "August 2018 - May 2019",
+        "desc": "The Dichopter® Project aims to provide the user with hardware and software tools to help them explore dichoptic vision – that is, two eyed or binocular vision where two images are presented to the left and right eye separately. The Dichopter Project allows people to expolore 3D vision and perception of other physics simulations. I enjoyed this project because it required me to learn how to optimize web pages when dealing with lots of content. ",
+        "technologies-used": ["JavaScript", "GitHub", "Progressive Web Apps", "Caching", "p5.js", "Materialize CSS"],
+        "role": "Lead Developer",
+        "url": "https://dichopter.com",
         "imageURLS": [""]
     }],
     "art-and-doodles": [{
-        "name": "",
-        "date": "",
-        "desc": "",
-        "imageURLS": [""]
+        "name": "Moiré Effect",
+        "date": "August 2018",
+        "desc": "What you are seeing is actually just two sets of lines being rotated. The vertical lines that appear are an optical illusion, the Moiré effect.",
+        "url": "moire-squares",
+        "imageURL": "display.gif"
+    }],
+    "academic-projects" : [{
+        "name": "Consent in Hookup Culture",
+        "date": "May 2019",
+        "desc": "For my final project in my writing class, I was required to write an essay about a philosophical issue I would like to explore.",
+        "url": "consent"
     }]
 }
