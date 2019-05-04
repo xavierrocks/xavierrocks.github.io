@@ -283,6 +283,11 @@ nav a.sidenav-trigger {
   border-radius: 20px;
 }
 
+.card-image {
+  min-height: 250px;
+  max-height:250px;
+}
+
 .section {
   min-height: 60vh;
 }

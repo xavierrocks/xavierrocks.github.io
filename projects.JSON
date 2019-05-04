@@ -3,7 +3,7 @@
         "name": "Dichopter® Project",
         "date": "August 2018 - May 2019",
         "desc": "The Dichopter® Project aims to provide the user with hardware and software tools to help them explore dichoptic vision – that is, two eyed or binocular vision where two images are presented to the left and right eye separately. The Dichopter Project allows people to expolore 3D vision and perception of other physics simulations. I enjoyed this project because it required me to learn how to optimize web pages when dealing with lots of content. ",
-        "technologies-used": ["JavaScript", "GitHub", "Progressive Web Apps", "Caching", "p5.js", "Materialize CSS"],
+        "technologiesUsed": ["JavaScript", "GitHub", "Progressive Web Apps", "Caching", "p5.js", "Materialize CSS"],
         "role": "Lead Developer",
         "url": "https://dichopter.com",
         "imageURLS": [""]
@@ -12,6 +12,7 @@
         "name": "Moiré Effect",
         "date": "August 2018",
         "desc": "What you are seeing is actually just two sets of lines being rotated. The vertical lines that appear are an optical illusion, the Moiré effect.",
+        "technologiesUsed" : ["JavaScript", "p5.js"],
         "url": "moire-squares",
         "imageURL": "display.gif"
     }],
