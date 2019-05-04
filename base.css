@@ -284,12 +284,7 @@ nav a.sidenav-trigger {
 }
 
 .card-image {
-  min-height: 250px;
   max-height:250px;
-}
-
-.card .card-image img {
-  padding-bottom: 50%;
 }
 
 .section {

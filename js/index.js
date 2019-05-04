@@ -7,28 +7,49 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function renderJSON(res) {
     projects = JSON.parse(res);
-    renderLongTermProjects('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator"src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">Go to project</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p></div></div>');
+    renderLongTermProjects('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator" src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">Go to project</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p></div></div>');
     // httpGetAsync("https://xavierrocks.github.io/navbar.html", renderArtAndDoodles);
     // httpGetAsync("https://xavierrocks.github.io/navbar.html", renderAcademicProjects);
 }
 
 function renderLongTermProjects(element) {
     var longTermProjectsList = document.querySelector(".long-term-projects");
-    
-    for(var i=0; i<projects.longTermProjects.length; i++){
-        var current = projects.longTermProjects[i];
-        var projectElement = document.createElement("li");
-        projectElement.classList.add("col", "s12", "m4");
-        projectElement.innerHTML = element;
-        // Now, we want to edit the html of the element
-        projectElement.children[0].children[0].children[0].src = current.imageURL;
-        projectElement.children[0].children[1].children[0].innerHTML = current.name+"<i class='material-icons right'>more_vert</i>";
-        projectElement.children[0].children[2].children[0].href = current.url;
-        projectElement.children[0].children[3].children[0].innerHTML = current.name+"<i class='material-icons right'>close</i>"
-        projectElement.children[0].children[3].children[1].innerHTML = current.desc;
-        // And now it is ready to insert
-        longTermProjectsList.appendChild(projectElement);
+    var numRows = Math.ceil(projects.longTermProjects.length/3);
+    for(var i=0; i<numRows; i++) {
+        var row = document.createElement("div");
+        row.classList.add("row");
+        for(var j=0; j<3; j++) {
+            if(projects.longTermProjects.length==0) break;
+            var current = projects.longTermProjects.pop();
+            var projectElement = document.createElement("div");
+            projectElement.classList.add("col", "s12", "m4");
+            projectElement.innerHTML = element;
+            // Now, we want to edit the html of the element
+            projectElement.children[0].children[0].children[0].src = current.imageURL;
+            projectElement.children[0].children[1].children[0].innerHTML = current.name+"<i class='material-icons right'>more_vert</i>";
+            projectElement.children[0].children[2].children[0].href = current.url;
+            projectElement.children[0].children[3].children[0].innerHTML = current.name+"<i class='material-icons right'>close</i>"
+            projectElement.children[0].children[3].children[1].innerHTML = current.desc;
+            // And now it is ready to insert
+            row.appendChild(projectElement);
+        }
+        longTermProjectsList.appendChild(row);
     }
+
+    // for(var j=0; j<projects.longTermProjects.length; j++){
+    //     var current = projects.longTermProjects[j];
+    //     var projectElement = document.createElement("li");
+    //     projectElement.classList.add("col", "s12", "m4");
+    //     projectElement.innerHTML = element;
+    //     // Now, we want to edit the html of the element
+    //     projectElement.children[0].children[0].children[0].src = current.imageURL;
+    //     projectElement.children[0].children[1].children[0].innerHTML = current.name+"<i class='material-icons right'>more_vert</i>";
+    //     projectElement.children[0].children[2].children[0].href = current.url;
+    //     projectElement.children[0].children[3].children[0].innerHTML = current.name+"<i class='material-icons right'>close</i>"
+    //     projectElement.children[0].children[3].children[1].innerHTML = current.desc;
+    //     // And now it is ready to insert
+    //     longTermProjectsList.appendChild(projectElement);
+    // }
 }
 
 function renderArtAndDoodles(res) {
