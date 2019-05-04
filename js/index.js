@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function renderJSON(res) {
     projects = JSON.parse(res);
-    renderLongTermProjects('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator" src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">Go to project</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p><h4>Technologies Used:</h4><ul class="technologies-used"><li>HTML</li><li>HTML</li></ul><h4>Role: </h4><p>Lead Developer</p></div></div>');
-    renderArtAndDoodles('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator" src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">View doodle</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p><h4>Technologies Used:</h4><ul class="technologies-used"><li>HTML</li><li>HTML</li></ul></div></div>');
+    renderLongTermProjects('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator" src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">Go to project</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p><h4>Technologies Used:</h4><ul class="technologies-used"></ul><h4>Role: </h4><p></p></div></div>');
+    renderArtAndDoodles('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator" src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">View doodle</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p><h4>Technologies Used:</h4><ul class="technologies-used"></ul></div></div>');
     // httpGetAsync("https://xavierrocks.github.io/navbar.html", renderAcademicProjects);
 }
 
@@ -30,6 +30,12 @@ function renderLongTermProjects(element) {
             projectElement.children[0].children[2].children[0].href = current.url;
             projectElement.children[0].children[3].children[0].innerHTML = current.name+"<i class='material-icons right'>close</i>"
             projectElement.children[0].children[3].children[1].innerHTML = current.desc;
+            while(current.technologiesUsed.length!=0){
+                var techElement = document.createElement("li");
+                techElement.innerText = current.technologiesUsed.pop();
+                projectElement.children[0].children[3].children[3].appendChild(techElement);
+            }
+            projectElement.children[0].children[3].children[5].innerText = current.role;
             // And now it is ready to insert
             row.appendChild(projectElement);
         }
@@ -56,6 +62,11 @@ function renderArtAndDoodles(element) {
             doodleElement.children[0].children[2].children[0].href = baseURL;
             doodleElement.children[0].children[3].children[0].innerHTML = current.name+"<i class='material-icons right'>close</i>"
             doodleElement.children[0].children[3].children[1].innerHTML = current.desc;
+            while(current.technologiesUsed.length!=0){
+                var techElement = document.createElement("li");
+                techElement.innerText = current.technologiesUsed.pop();
+                doodleElement.children[0].children[3].children[3].appendChild(techElement);
+            }
             // And now it is ready to insert
             row.appendChild(doodleElement);
         }
