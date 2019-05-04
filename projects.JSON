@@ -11,10 +11,18 @@
     "artAndDoodles": [{
         "name": "Moiré Effect",
         "date": "August 2018",
-        "desc": "What you are seeing is actually just two sets of lines being rotated. The vertical lines that appear are an optical illusion, the Moiré effect.",
+        "desc": "What you are seeing is actually just two sets of horizontal lines being rotated. The vertical lines that appear are an optical illusion, the Moiré effect.",
         "technologiesUsed" : ["JavaScript", "p5.js"],
         "url": "moire-squares",
         "imageURL": "display.gif"
+    },
+    {
+        "name": "Binary Numbers",
+        "date": "March 2019",
+        "desc": "I got most of my code following a tutorial by Dan Shiffman. What this does is show a binary representation of a number through the dots at the top. The decimal representation is in the center. I modified it to respond to mouse events and so users can shift the binary number left and right. You can also enter in a decimal number and it will automatically convert it to binary!",
+        "technologiesUsed" : ["JavaScript", "p5.js"],
+        "url": "binary-numbers",
+        "imageURL": "capture.PNG"
     }],
     "academicProjects" : [{
         "name": "Consent in Hookup Culture",
