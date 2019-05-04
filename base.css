@@ -279,6 +279,10 @@ nav a.sidenav-trigger {
   background-color: #e8e8e8;
 }
 
+.profileImage{
+  border-radius: 20px;
+}
+
 .section {
   min-height: 60vh;
 }
