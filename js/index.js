@@ -15,6 +15,13 @@ function renderJSON(res) {
 function renderLongTermProjects(res) {
     // we know have a project element, let's insert them into the doc
     console.log("long term projects");
+    var longTermProjectsList = document.querySelector(".long-term-projects");
+    for(var i=0; i<projects.longTermProjects.length; i++){
+        var projectElement = document.createElement("li");
+        projectElement.classList.add("col", "s12", "m4");
+        projectElement.innerHTML = res;
+        longTermProjectsList.appendChild(projectElement);
+    }
 }
 
 function renderArtAndDoodles(res) {
