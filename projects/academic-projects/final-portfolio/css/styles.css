@@ -18,3 +18,15 @@ footer, header {
 .section {
     min-height: 0;
 }
+
+blockquote {
+    font-size: 1.5em;
+}
+
+ol {
+    font-size: 1.5em;
+}
+
+ol.sources {
+    font-size: 1em;
+}
