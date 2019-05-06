@@ -3,10 +3,12 @@ document.addEventListener('DOMContentLoaded', function () {
     httpGetAsync("https://xavierrocks.github.io/navbar.html", renderItems);
     // Render the footer through here
     httpGetAsync("https://xavierrocks.github.io/footer.html", renderFooter);
-
+    var printButton = document.querySelector(".printButton");
+    printButton.addEventListener('click', function(){
+        window.print();
+    });
 
 });
-
 
 
 function renderItems(res) {
