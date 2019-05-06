@@ -1,9 +1,8 @@
 .mainContent {
     font-family: 'Crimson Text', serif;
-
 }
 
-.mainContent h2 { 
+.mainContent h2 {
     font-weight: 600;
 }
 
@@ -11,8 +10,9 @@
     font-size: 1.7em;
 }
 
-footer, header {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+footer,
+header {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .section {
@@ -29,4 +29,14 @@ ol {
 
 ol.sources {
     font-size: 1em;
+}
+
+p+p {
+    text-indent: 2em;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 0.3em;
+    /* padding-bottom: 0; */
 }
