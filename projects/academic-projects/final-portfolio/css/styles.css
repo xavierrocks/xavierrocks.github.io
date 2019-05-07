@@ -36,6 +36,9 @@ ol {
 ol.sources {
   font-size: 1em;
 }
+ol[type="a"] {
+  font-size: 1em;
+}
 
 p + p {
   text-indent: 2em;
