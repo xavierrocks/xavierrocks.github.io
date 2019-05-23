@@ -1,7 +1,7 @@
 var projects;
 
 document.addEventListener('DOMContentLoaded', function () {
-    httpGetAsync("https://xav.ie/projects.JSON", renderJSON)
+    httpGetAsync("https://xav.ie/projects.JSON", renderJSON);
 });
 
 
@@ -11,6 +11,12 @@ function renderJSON(res) {
     renderArtAndDoodles('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator" src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">View doodle</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p><h4>Technologies Used:</h4><ul class="technologies-used"></ul></div></div>');
     // httpGetAsync("https://xav.ie/navbar.html", renderAcademicProjects);
 }
+
+async function renderProjects(url) {
+    const res = await fetch("https://xav.ie/projects.JSON");
+    console.log(res);
+}
+
 
 function renderLongTermProjects(element) {
     var longTermProjectsList = document.querySelector(".long-term-projects");
