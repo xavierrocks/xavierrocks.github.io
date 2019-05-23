@@ -1,7 +1,7 @@
 var projects;
 
 document.addEventListener('DOMContentLoaded', function () {
-    httpGetAsync("https://xavierrocks.github.io/projects.JSON", renderJSON)
+    httpGetAsync("https://xavi.ie/projects.JSON", renderJSON)
 });
 
 
@@ -9,7 +9,7 @@ function renderJSON(res) {
     projects = JSON.parse(res);
     renderLongTermProjects('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator" src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">Go to project</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p><h4>Technologies Used:</h4><ul class="technologies-used"></ul><h4>Role: </h4><p></p></div></div>');
     renderArtAndDoodles('<div class="card sticky-action"><div class="card-image waves-block waves-effect waves-light"><img class="activator" src=""></div><div class="card-content"><span class="activator card-title grey-text text-darken-4"></span></div><div class="card-action"><a class="blue-text"href="#">View doodle</a></div><div class="card-reveal"><span class="card-title grey-text text-darken-4"></span><p></p><h4>Technologies Used:</h4><ul class="technologies-used"></ul></div></div>');
-    // httpGetAsync("https://xavierrocks.github.io/navbar.html", renderAcademicProjects);
+    // httpGetAsync("https://xavi.ie/navbar.html", renderAcademicProjects);
 }
 
 function renderLongTermProjects(element) {
@@ -56,7 +56,7 @@ function renderArtAndDoodles(element) {
             doodleElement.classList.add("col", "s12", "m4");
             doodleElement.innerHTML = element;
             // Now, we want to edit the html of the element
-            var baseURL = "https://xavierrocks.github.io/projects/art-and-doodles/"+current.url+"/";
+            var baseURL = "https://xavi.ie/projects/art-and-doodles/"+current.url+"/";
             doodleElement.children[0].children[0].children[0].src = baseURL+current.imageURL;
             doodleElement.children[0].children[1].children[0].innerHTML = current.name+"<i class='material-icons right'>more_vert</i>";
             doodleElement.children[0].children[2].children[0].href = baseURL;

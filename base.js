@@ -59,7 +59,7 @@ function changeJS(jsFile, jsLinkIndex) {
 
 function changePage(base) {
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", "https://xavierrocks.github.io/" + base + "/main.html", true); // true for asynchronous 
+    xmlHttp.open("GET", "https://xav.ie/" + base + "/main.html", true); // true for asynchronous 
 
     xmlHttp.send(null);
     xmlHttp.onreadystatechange = function () {
@@ -79,9 +79,9 @@ function changePage(base) {
 
             // now that the main content is changed, we can change the other assets
             // So far, the custom css styling for pages will always be the eighth index
-            changeCSS("https://xavierrocks.github.io/" + base + "/css/styles.css", 8);
+            changeCSS("https://xav.ie/" + base + "/css/styles.css", 8);
             // the custom JS will also always be the second index
-            changeJS("https://xavierrocks.github.io/" + base + "/js/index.js", 2);
+            changeJS("https://xav.ie/" + base + "/js/index.js", 2);
         }
     }
 }
