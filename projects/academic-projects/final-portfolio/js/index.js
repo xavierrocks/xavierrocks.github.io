@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Render the navbar and other Materialize elements through here
-    httpGetAsync("https://xavi.ie/navbar.html", renderItems);
+    httpGetAsync("https://xav.ie/navbar.html", renderItems);
     // Render the footer through here
-    httpGetAsync("https://xavi.ie/footer.html", renderFooter);
+    httpGetAsync("https://xav.ie/footer.html", renderFooter);
     var printButton = document.querySelector(".printButton");
     printButton.addEventListener('click', function(){
         window.print();

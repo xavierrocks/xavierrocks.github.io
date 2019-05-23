@@ -4,7 +4,7 @@ Click the link below to find out more:
 
 ***
 
-<p align="center"><a href="https://xavi.ie">xavi.ie</a></p>
+<p align="center"><a href="https://xav.ie">xav.ie</a></p>
 
 ***
 
