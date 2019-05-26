@@ -38,7 +38,7 @@
         "desc": "Following a tutorial by Professor Dan Shiffman at NYU, I re-created the raycasting demo that he created. This is not my original work, but I hope to expand on his tutorial in the future and make a small game.",
         "technologiesUsed" : ["JavaScript", "p5.js"],
         "url": "raycasting",
-        "imageURL": "optimized.gif"
+        "imageURL": "opt.gif"
     }],
     "academicProjects" : [{
         "name": "Consent in Hookup Culture",
