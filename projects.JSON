@@ -6,7 +6,7 @@
         "technologiesUsed": ["JavaScript", "GitHub", "Progressive Web Apps", "Caching", "p5.js", "Materialize CSS"],
         "role": "Lead Developer",
         "url": "https://dichopter.com",
-        "imageURL": "https://dichopter.com/viewer/viewer.jpg"
+        "imageURL": "dichopter/viewer.jpg"
     }],
     "artAndDoodles": [{
         "name": "Moiré Effect",

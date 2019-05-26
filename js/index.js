@@ -31,7 +31,8 @@ function renderLongTermProjects(element) {
             projectElement.classList.add("col", "s12", "m4");
             projectElement.innerHTML = element;
             // Now, we want to edit the html of the element
-            projectElement.children[0].children[0].children[0].src = current.imageURL;
+            var baseURL = "https://xav.ie/projects/long-term-projects/";
+            projectElement.children[0].children[0].children[0].src = baseURL+current.imageURL;
             projectElement.children[0].children[1].children[0].innerHTML = current.name+"<i class='material-icons right'>more_vert</i>";
             projectElement.children[0].children[2].children[0].href = current.url;
             projectElement.children[0].children[3].children[0].innerHTML = current.name+"<i class='material-icons right'>close</i>"
