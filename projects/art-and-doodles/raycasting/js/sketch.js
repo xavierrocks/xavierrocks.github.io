@@ -1,6 +1,7 @@
 let walls = [], particle;
 let xoff = 0, yoff =123141;
 
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
     for(let i = 0; i<5; i++) {
@@ -10,6 +11,11 @@ function setup() {
         let y2 = random(height);
         walls[i] = new Boundary(x1, y1, x2, y2);
     }
+    walls.push(new Boundary(0,0,windowWidth,0));
+    walls.push(new Boundary(0,0,0,windowHeight));
+    walls.push(new Boundary(windowWidth,0,windowWidth,windowHeight));
+    walls.push(new Boundary(0,windowHeight,windowWidth,windowHeight));
+    
     particle = new Particle();
     noStroke();
 }
@@ -20,7 +26,7 @@ function draw() {
         wall.show();
         
     }
-    particle.update(noise(xoff)*width, noise(yoff)*height);
+    particle.update(mouseX, mouseY);
     particle.show();
     particle.look(walls);
     
