@@ -3,17 +3,18 @@ class Particle {
     constructor() {
         this.pos = createVector(width/2, height/2);
         this.rays = [];
-        for(let a=0; a<360; a+=90) {
+        // for(let a=0; a<360; a+=90) {
+        for(let a=0; a<360; a+=1) {
             this.rays.push(new Ray(this.pos, radians(a)));
         }
-        this.v = p5.Vector.random2D().mult(1);
+        this.v = p5.Vector.random2D().mult(2);
     }
 
     show () {
         fill(255);
         ellipse(this.pos.x, this.pos.y, 1);
-        noFill();
-        ellipse(this.pos.x, this.pos.y,75);
+        // noFill();
+        // ellipse(this.pos.x, this.pos.y,75);
         for(let ray of this.rays){
             ray.show();
         }
