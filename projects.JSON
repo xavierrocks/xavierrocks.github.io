@@ -7,8 +7,32 @@
         "role": "Lead Developer",
         "url": "https://dichopter.com",
         "imageURL": "dichopter/viewer.jpg"
+    }, {
+        "name": "TravelAnywhere",
+        "date": "May 2020 - Present",
+        "desc": "TravelAnywhere is an experiment and study of the travelling salesman problem, which is 'What is the most efficient way to go through a group of points of interest?'. I experimented with multiple algorithms for this including brute force, combinatorial, and genetic! Currently, it is the works to use an algorithm proposed in 1983 by Dumas et al.",
+        "technologiesUsed": ["React", "Javascript", "Google Maps API"],
+        "role": "Lead Developer",
+        "url": "https://github.com/xav-ie/tsp_react",
+        "imageURL": "TravelAnywhere/path.png"
+    }, {
+        "name": "BostonHacks.io Website",
+        "date": "January 2020 - Present",
+        "desc": "BostonHacks is Boston's largest hackathon of 500+ hackers. I created and designed the landing page, SVGs, and animations used in the site. It uses Firebase as its backend and is a new project by the BostonHacks team.",
+        "technologiesUsed": ["Vue", "Javascript", "SVG", "SMIL", "Firebase"],
+        "role": "Front-end Developer",
+        "url": "https://bostonhacks.io",
+        "imageURL": "BostonHacks/pinata.gif"
     }],
     "artAndDoodles": [{
+        "name": "Smart Rockets",
+        "date": "May 2020",
+        "desc": "This is an awesome little doodle where the rockets 'learn' to hit the red dot through a genetic algorithm. This means every new generation of rockets is from the previous version. I score the rockets based on how fit they are, and the goal is to hit the red dot in the fastest time possible. The fittest rockets are allowed to generate more children with a small amount of mutation so that the rockets may evolve to be faster. This is from a YouTube tutorial by Dan Shiffman. ",
+        "technologiesUsed" : ["JavaScript", "p5.js"],
+        "url": "smart-rockets",
+        "imageURL": "rockets.gif"
+    },
+    {
         "name": "Moiré Effect",
         "date": "August 2018",
         "desc": "What you are seeing is actually just two sets of horizontal lines being rotated. The vertical lines that appear are an optical illusion, the Moiré effect.",
