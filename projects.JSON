@@ -23,6 +23,22 @@
         "role": "Front-end Developer",
         "url": "https://bostonhacks.io",
         "imageURL": "BostonHacks/pinata.gif"
+    }, {
+        "name": "BUILDS.cc Website",
+        "date": "October 2020 - November 2020",
+        "desc": "BUILDS is a Boston University hackerspace and club that is core to the BU Computer Science experience. The site is a simple Create-React-App site I built in a couple of days using styled-components, react-spring, react-router-dom, and flexbox grid. I had a a lot of fun on this because this is the fastest I have been able to make something so substantial.",
+        "technologiesUsed": ["React", "styled-components", "react-router-dom", "react-spring", "Flexbox Grid"],
+        "role": "Lead Developer",
+        "url": "https://builds.cc",
+        "imageURL": "BUILDS/builds.png"
+    }, {
+        "name": "Beaglenet AWS Backend",
+        "date": "May 2020 - Present",
+        "desc": "Beaglenet is a startup aiming to improve the world through occupancy monitoring. Founded by my friends and I, we have already gotten contracts with Boston University. My role in this project was to connect the monitoring devices to the AWS DynamoDB database and get them to properly record the desired information through AWS Lambda functions.",
+        "technologiesUsed": ["Vue", "AWS", "DynamoDB", "Lambda", "IOT"],
+        "role": "Backend Developer",
+        "url": "https://thebeaglenet.com",
+        "imageURL": "Beaglenet/beaglenet.png"
     }],
     "artAndDoodles": [{
         "name": "Smart Rockets",
