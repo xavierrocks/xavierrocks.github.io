@@ -52,26 +52,3 @@ input[type="radio"]:checked+label {
 canvas {
     border-radius: 35px;
 }
-
-.button {
-    text-decoration: none;
-    background: white;
-    box-shadow: 0 0 10px #0003;
-    padding: 11px;
-    position: relative;
-    border-radius: 10px;
-    transition: background .2s ease-in-out;
-    color: black;
-}
-.button:hover {
-    background: #81e3ae;
-    box-shadow: 0 0 10px #0000000;
-}
-
-li {
-    margin: 35px 0;
-}
-
-.main {
-    padding: 2.5%;
-}
